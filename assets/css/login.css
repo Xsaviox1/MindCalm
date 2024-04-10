@@ -20,7 +20,7 @@ body{
 
  .back-button {
     position: absolute;
-    top: 45px;
+    top: 24px;
     left: 20px;
     font-size: 30px;
     cursor: pointer;
@@ -35,7 +35,7 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center; 
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     height: 45px;
      
@@ -78,6 +78,7 @@ form{
     font-weight: 500;
   }
   form p{
+    margin-top: -14px;
     font-size: 1.4rem;
   }
   .header img{
