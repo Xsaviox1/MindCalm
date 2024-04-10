@@ -1,0 +1,532 @@
+/*Estilizações gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-family: "Urbanist", sans-serif;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #454545;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+/*Navegação*/
+nav {
+  position: fixed;
+  bottom: -1px;
+  width: 101%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  background-color: #454545;
+  border-radius: 14px 14px 0 0;
+}
+/*Navegação parte interna*/
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+/*Navegação Fim*/
+/*Estilizações gerais Fim*/
+/*Tela 1*/
+.form .header h2{
+  margin: auto;
+  padding-right: 47.01px;
+  font-weight: 500;
+}
+form p{
+  font-size: 1.3em;
+}
+.header img{
+  padding-left: 8px;
+}
+.logo img{
+  padding: 25px 0;
+}
+.input-container label{
+  display: flex;
+  margin-left: 10px;
+}
+.input-container label:nth-child(1){
+  padding-top: 20px;
+}
+.input-container input{
+  border-radius: 30px;
+  width: 70vw;
+  height: 45px;
+}
+.lista-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    padding-top: 15px;
+}
+.lembrar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10em;
+}
+.login .texto{
+  font-size: 0.8em;
+}
+.login-container-lista{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70vw;
+}
+h3{
+  width: 70vw;
+  text-align: center;
+  font-weight: 500;
+}
+/*Botão*/
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 57px;
+  height: 20px;
+ }
+ 
+ .switch input {
+  opacity: 1;
+  width: 0;
+  height: 0;
+ }
+ 
+ .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: #fff;
+  transition: .4s;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+ }
+ 
+ .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 16px;
+  left: -1px;
+  top: -1px;
+  bottom: 0;
+  background-color: #000;
+  box-shadow: 0 2px 5px #999999;
+  transition: .4s;
+ }
+ 
+ .switch input:checked + .slider {
+  background-color: gray;
+  border: 1px solid transparent;
+ }
+ 
+ .switch input:checked + .slider:before {
+  transform: translateX(2.2em);
+ }
+ /*Botão Fim*/
+ /*Responsividade Tela 1*/
+ @media screen and (max-width:370px) {
+  .login .texto{
+    font-size: 0.5em;
+    padding-left: 3px;
+  }
+  .lembrar{
+    justify-content: unset;
+  }
+  .login img{
+    width: 70%;
+  }
+  .lista-login img{
+    width: 70%;
+  }
+  .lista-login{
+    width: 77vw;
+  }
+}
+/*Responsividade Tela 1 Fim*/
+/*Tela 1 Fim*/
+/*Tela 2*/
+#tema{
+  width: 90vw;
+}
+
+.passo{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.passo span{
+  font-size: 1.1em;
+}
+.carrossel{
+  padding-right: 25px;
+  display: flex;
+  width: 4em;
+  justify-content: space-between;
+}
+.container-grande{
+  background-color: #D9D9D9;
+  width: 2em;
+  height: .5em;
+  border-radius: 20px;
+}
+.container-pequeno{
+  background-color: #D9D9D9;
+  height: .5em;
+  width: .5em;
+  border-radius: 20px;
+}
+
+/*CheckBox*/
+.input{
+  margin-right: auto;
+}
+
+.input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  background-color:#d6d6d6;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+/*CheckBox Fim*/
+.container-privacidade{
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+.asteristico{
+  color: var()
+}
+.privacidade{
+  font-size: 0.5em;
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+.privacidade p{
+  width: 42vw;
+}
+.privacidade a{
+  text-decoration: underline;
+  color: #fff;
+}
+/*Tela 2 Fim*/
+/*Tela 3*/
+.logo-horizontal{
+  padding-top: .5em;
+}
+
+#h3{
+  width: 90vw;
+}
+.texto-t3{
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+}
+.texto-t3 span{
+  width: 50vw ;
+}
+
+.input-wrap{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  width: 90vw;
+}
+#nasc,#genero,#cidade,#tel,#cid{
+  width: 40vw;
+}
+#nasc, #genero, #cidade, #tel, #cid {
+  padding-top: 5px; /* Reduz o preenchimento superior para 5 pixels */
+}
+#uf{
+  width: 30vw;
+}
+#tela3{
+  padding: 0;
+}
+.input-wrap .input-container label:nth-child(1){
+  padding-top: 5px;
+}
+.botao-continuar{
+  margin-left: auto;
+  padding: 12px .7em 0 0;
+}
+.icone-centralizado img{
+  width: 167px;
+  height: 167px;
+}
+/*Tela 3 Fim*/
+/*Tela 4*/
+.container4{
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+.container4 span{
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.container4 .informacoes{
+  display: flex;
+}
+.container4 .container-icone{
+  width: 2em;
+  height: 2em;
+  background-color: #d6d6d6;
+  border-radius: 100px;
+  border: #000 1px solid;
+}
+.container4 .header4{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0 0 0;
+}
+.container4 h2{
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 600;
+}
+.container4 p{
+  width: 90vw;
+}
+.emocoes{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow-x: scroll;
+}
+.emocoes::-webkit-scrollbar{
+  display: none;
+}
+.emocoes img{
+  width: 20vw;
+  height: 20vw;
+}
+.emocoes img:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+.resposta-diaria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10em;
+  width: 100vw;
+  margin-top: 2.6em;
+}
+.resposta-diaria input{
+  width: 90%;
+  border-radius: 14px 14px 0 0;
+  height: 4em;
+  border: none;
+  background-color: #d6d6d6;
+  margin-bottom: -1px;
+}
+.resposta-diaria .audio{
+  width: 90%;
+  padding: 2px;
+  border-radius: 0 0 14px 14px;
+  height: 2em;
+  background-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.resposta-diaria label{
+  margin-right: auto;
+  padding: 0 0 1em 1.5em;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.container-vazio{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.container-vazio input{
+  width: 90%;
+  border-radius: 14px;
+  height: 6.6em;
+  border: none;
+  background-color: #d6d6d6;
+}
+
+/*Tela 4 Fim*/
+/*Navegação*/
+nav {
+  position: fixed;
+  bottom: -1px;
+  width: 101%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  background-color: #454545;
+  border-radius: 14px 14px 0 0;
+}
+/*Navegação parte interna*/
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+/*Navegação Fim*/
+/*Tela 5*/
+.container5{
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+.container5 .texto5 span{
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 600;
+}
+.container5 .informacoes{
+  display: flex;
+}
+.container5 .container-icone{
+  width: 2em;
+  height: 2em;
+  background-color: #d6d6d6;
+  border-radius: 100px;
+  border: #000 1px solid;
+}
+.container5 .header5{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0 0 0;
+}
+.container5 .texto5{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  width: 90vw;
+}
+.wrap-lista{
+  display: grid;
+  padding: 1em 0 0 0vw;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 90vw;
+  overflow-x: scroll;
+}
+.wrap-lista::-webkit-scrollbar{
+  display: none;
+}
+.wrap-humor{
+  width: 20vw;
+  height: 20vw;
+  background-color: #d6d6d6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-row:1;
+}
+.wrap-humor span{
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.wrap-video, .wrap-podcast{
+  width: 9.5em;
+  height: 6em;
+  background-color: #000;
+  border-radius: 20px;
+  grid-row:1;
+}
+.texto-caixas{
+  width: 90vw;
+  margin-top: 2em;
+}
+.wrap-podcast{
+  height: 9em;
+}
+.container5 .header5 span{
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.wrap-saiba-mais{
+  width: 80vw;
+  height: 65vw;
+  background-color: #000;
+  border-radius: 0 20px 0 20px;
+  margin-bottom: 5em;
+  grid-row:1;
+}
+/*Tela 5 Fim*/
+/*Responsividade Tela 5*/
+@media screen and (max-width:350px) {
+  .wrap-humor{
+    width: 25vw;
+    height: 25vw;
+    transition: .5s;
+  }
+}
+/*Responsividade Tela 5 Fim*/
