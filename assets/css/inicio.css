@@ -32,7 +32,7 @@ body{
 
 .logo {
   margin-bottom: 50px; /* Ajuste para centralizar */
-  margin-top: 58px;
+  margin-top: 40px;
 }
 
 h1 {
@@ -98,7 +98,8 @@ h1 {
   flex-direction: column;
   width: 70%;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 3.4rem;
+  margin-bottom: -150px;
  }
 
