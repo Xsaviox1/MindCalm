@@ -7,8 +7,10 @@ body{
     color: white;
     font-family: "Urbanist", sans-serif;
     background-color: var(--cor--bg);
-    overflow-x: hidden
-}
+    background: var(--cor--bg);
+    overflow-x: hidden;
+    
+ }
 
 :root {
     --cor--fundo: #9978A7;
@@ -18,6 +20,48 @@ body{
     --cor--bgwhite: #E1E1E1;
     --cor--escura: #5D4966;
  }
+ 
+ /*body.loaded {
+    opacity: 1;
+ }
+ .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor--fundo);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+.preloader-container {
+  text-align: center;
+}
+
+.preloader-logo {
+  width: auto; 
+  height: auto;
+  margin-bottom: 20px;
+}*/
+
+.preloader-spinner {
+  border: 8px solid #eeeeee; 
+  border-top: 8px solid var(--cor--escura);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 /*iframes*/
 iframe{
@@ -139,14 +183,19 @@ h3{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.308);
     margin-left: 1px;
     margin-bottom: 10px;
+    background-color: #000;
 
   }
 
-.wrap-lista img{ 
-    width: 152px;
-    height: 152px;
+  .wrap-video img{ 
+    width: 151px;
+    height: 95px;
     border-radius: 15px;
-    opacity: 70%;
+   }
+
+.wrap-lista img{ 
+    border-radius: 15px;
+    opacity: 80%;
    }
  
   .wrap-podcast{
@@ -173,10 +222,11 @@ h3{
 
   a{
 text-decoration: none;
+color: #AA8FB6;
   }
 
   
-  p{
+  .titulos{
     color: white;
     margin-top: -6px;
     margin-left: 10px;
@@ -187,20 +237,34 @@ text-decoration: none;
     padding: 1em 0 0 0vw;
     flex-wrap: wrap;
     gap: 1em;
-    height: auto;
-    margin-bottom: 2em; /* Espaçamento abaixo adicionado */
-  }
-
-  .wrap-saiba-mais{
+    margin-bottom: 8rem;
+    background-color:var(--cor--escura);
     width: 22rem;
     height: 14rem;
-   background-image: url(/assets/img/noticia.svg);
-    border-radius: 0 20px 0 20px;
-    margin-bottom: 5em;
-    grid-row:1;
-    background-image: op;
-    background-color: #000;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    color: #C4B1CC;
   }
+
+ 
+  .wrap-sbm img{
+border-radius: 20px;
+height: 100%;
+width: 100%;
+  }
+
+  .saber-mais{
+    height: auto;
+    width: 22rem;
+    background-color: #000;
+    border-radius: 16px;  
+  }
+
+  /* Pré-carregamento de imagens */
+.wrap-saiba-mais::before {
+  content: url(/assets/img/noticia.svg);
+  display: none;
+}
 
 /*Navegação*/
 .bottom-navbar {

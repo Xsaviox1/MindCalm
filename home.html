@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Home</title>
     <link rel="stylesheet" href="/assets/css/home.css"  media="print" onload="this.media='all'">
@@ -13,6 +14,12 @@
     <meta name="description" content="App de Saude Mental">
 </head>
 <body>
+
+    <!--<div class="preloader">
+        <img class="preloader-logo" src="/assets/logos/mindcalm-logo.svg" alt="Logo">
+        
+        <div class="preloader-spinner"></div>-->
+    </div>
     <div class="container5">
         <!--Parte superior-->
         <!--Cabeçalho-->
@@ -71,11 +78,18 @@
             <span>Videos de meditação guiada</span>
         </div>
         <div class="wrap-lista">
-            <div class="wrap-video"><iframe width="152" height="95" src="https://www.youtube.com/embed/uLVvZWL2FUg?si=gzezcWJpTFE1fWOj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="wrap-video" data-video-id="uLVvZWL2FUg">
+                <img data-src="/assets/img/video1.svg"alt="Video Thumbnail" loading="lazy">
             </div>
-            <div class="wrap-video"><iframe width="152" height="95" src="https://www.youtube.com/embed/eJ2prqWQNzI?si=PMyMyBhRKoW26JTj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <div class="wrap-video"><iframe width="152" height="95" src="https://www.youtube.com/embed/KNAkUbPqqHA?si=5VpDxHuwHESfgTJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <div class="wrap-video"><iframe width="152" height="95" src="https://www.youtube.com/embed/KNAkUbPqqHA?si=5VpDxHuwHESfgTJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="wrap-video" data-video-id="eJ2prqWQNzI">
+                <img data-src="/assets/img/video2.svg" alt="Video Thumbnail" loading="lazy">
+            </div>
+            <div class="wrap-video" data-video-id="KNAkUbPqqHA">
+                <img data-src="/assets/img/video3.svg" alt="Video Thumbnail" loading="lazy">
+            </div>
+            <div class="wrap-video" data-video-id="QQkRN4tjHns">
+                <img data-src="/assets/img/video4.svg" alt="Video Thumbnail" loading="lazy">
+            </div>
         </div>
         <!--Caixas de Video Fim-->
         <!--Caixas de Poscast-->
@@ -84,15 +98,15 @@
         </div>
         <div class="wrap-lista">
             <div class="wrap-podcast"><a href="https://open.spotify.com/episode/3teS8yH1VxtjZgvplsfVnR?si=eecb0f28c2f64a0b" alt="linkSpotify"><img src="/assets/img/podcast1.svg" alt="PodCast Psicolloga"></a>
-                <p>EP.114 Razão vs Emoção</p>
+                <p class="titulos">EP.114 Razão vs Emoção</p>
               </div>
             <div class="wrap-podcast"><a href="https://open.spotify.com/episode/5OFyM3VJqxLm3oGjAC1tSA?si=2b39aebccd83471f" alt="linkSpotify"><img src="/assets/img/podcast1.svg" alt="PodCast Psicolloga"></a>
-                <p>EP.113 Mundo Corporativo</p>
+                <p class="titulos">EP.113 Mundo Corporativo</p>
             </div>
             <div class="wrap-podcast"><a href="https://open.spotify.com/episode/1YZgSRzbFzS8DYsZPbLPaq?si=2d595c43929d472d" alt="linkSpotify"><img src="/assets/img/podcast2.svg" alt="PodCast PsiNaPratica"></a></div>
             <div class="wrap-podcast"><a href="https://open.spotify.com/episode/4cJtdFQ7Bow2deCg3foovA?si=73f147c77fc0443e" alt="linkSpotify"><img src="/assets/img/podcast3.svg" alt="PodCast PsiNaPratica"></a></div>
             <div class="wrap-podcast"><a href="https://open.spotify.com/episode/5d4VoxbbmqPDY3EOWCNoc5?si=9c6850b0d5f24038" alt="linkSpotify"><img src="/assets/img/podcast4.svg" alt="PodCast PsiPraVida"></a>
-                <p>Como melhorar o seu foco...</p>
+                <p class="titulos">Como melhorar o seu foco...</p>
             </div>
         </div>
         <!--Caixas de Poscast Fim-->
@@ -101,13 +115,15 @@
             <span>Saiba mais sobre saúde mental</span>
         </div>
         <div class="wrap-sbm">
-            <a href="https://www.cnnbrasil.com.br/tudo-sobre/saude-mental/" alt="cnnbrasil"><div class="wrap-saiba-mais"><p>Tudo Sobre Saúde Mental - CNN Brasil</p></div></a>
+            <a href="https://www.cnnbrasil.com.br/tudo-sobre/saude-mental/" alt="cnnbrasil">
+                <p>Tudo Sobre Saúde Mental - CNN Brasil</p></a>
+                
         </div>
         <!--Caixas de Saiba Mais Fim-->
         <!--Caixas de seleção Fim-->
         <!--Navegação-->
         <footer class="bottom-navbar">
-            <a href="home.html">
+            <a href="home">
                 <i class="fas fa-home" alt="home"></i>
                 <span>Início</span>
             </a>  <a href="mapa.html">
@@ -119,16 +135,17 @@
                 <span>Diário</span>
             </a>
           
-            <a href="#">
+            <a href="chat">
                 <i class="fa-solid fa-comment"></i>
                 <span>Chat</span>
             </a>
-            <a href="#">
+            <a href="perfil" aria-label="area-perfil">
                 <i class="fas fa-user" alt="perfil"></i>
                 <span>Perfil</span>
         </footer>
-        <!--Navegação Fim-->
-    </div>
+        <script src="/assets/js/videos.js"></script>
+        <script src="/assets/js/img.js"></script>
 
-</body>
-</html>
+
+    </body>
+    </html>
