@@ -7,6 +7,7 @@ body{
     color: white;
     font-family: "Urbanist", sans-serif;
     background-color: var(--cor--bg);
+    overflow-x: hidden
 }
 
 :root {
@@ -21,6 +22,7 @@ body{
 /*iframes*/
 iframe{
     border-radius: 15px;
+    text-decoration: n;
    }
   
 
@@ -36,6 +38,7 @@ iframe{
     font-family: "Shadows Into Light Two", cursive;
     font-weight: 600;
     font-size: 1.2rem;
+  
   }
   .container5 .informacoes{
     display: flex;
@@ -45,30 +48,37 @@ iframe{
     height: 3em;
     background-image: url(/assets/icones/avatar.svg);
     border-radius: 100px;
-
+    margin-left: 16px;
+    margin-top: 5px;
   }
 
-  /*.header5{
-    background-color: #5D4966;
-    padding-left: 10%;
-    padding-top: 10%;
-    margin-top: -20px;
-  }*/
+  .notf{
+ color: #5D4966;
+ margin-left: -13rem;
+ font-size: 1.4rem;
+  }
 
   .logo{
   color: var(--cor--fundo);
+  margin-right: 16px;
   }
   .container5 .header5{
-    width: 90vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em 0 0 0;
-  }
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    height: 64px;
+    background-color: #e8e1eb; /* Define uma cor de fundo com transparência */
+    backdrop-filter: blur(10px); /* Aplica um efeito de desfoque ao fundo */
+    z-index: 1000; /* Define a ordem de empilhamento para garantir que o cabeçalho fique acima de outros elementos */
+}
+    
   .container5 .texto5{
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 5rem;
     width: 90vw;
   }
   .wrap-lista{
@@ -78,6 +88,7 @@ iframe{
     gap: 1em;
     width: 90vw;
     overflow-x: scroll;
+    margin-top: -2re;
   }
 
   .wrap-podcast p {
@@ -92,10 +103,10 @@ iframe{
     display: none;
   }
   .wrap-humor1, .wrap-humor2, .wrap-humor3, .wrap-humor4, .wrap-humor5{
-    width: 20vw;
-    height: 20vw;
-    background-color: var(--cor--fundo);
-    border-radius: 20px;
+    width: 16vw;
+    height: 16vw;
+    border-color: var(--cor--escura);
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -106,30 +117,10 @@ iframe{
   }
 
   .hum{
-    color: rgb(255, 255, 255);
-    font-size: 3rem;
+    color: var(--cor--fundo);
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 0.5rem;
-  }
-
-  .wrap-humor1{
-    background-color: rgb(139, 216, 139);
-  }
-
-  .wrap-humor2{
-    background-color: rgb(226, 205, 87);
-  }
-
-  .wrap-humor3{
-    background-color: rgba(194, 28, 28, 0.712);
-  }
-
-  .wrap-humor4{
-    background-color: rgba(77, 142, 216, 0.712);
-  }
-
-  .wrap-humor5{
-    background-color: rgba(204, 116, 192, 0.712);
   }
 
 
@@ -147,7 +138,8 @@ h3{
     grid-row:1;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.308);
     margin-left: 1px;
-    margin-bottom: -0px;
+    margin-bottom: 10px;
+
   }
 
 .wrap-lista img{ 
@@ -195,7 +187,8 @@ text-decoration: none;
     padding: 1em 0 0 0vw;
     flex-wrap: wrap;
     gap: 1em;
-    height: 360px;
+    height: auto;
+    margin-bottom: 2em; /* Espaçamento abaixo adicionado */
   }
 
   .wrap-saiba-mais{
@@ -209,11 +202,6 @@ text-decoration: none;
     background-color: #000;
   }
 
-  
- 
-
-
-  
 /*Navegação*/
 .bottom-navbar {
     position: fixed;

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Diário de emoções</title>
     <link rel="stylesheet" href="/assets/css/diario.css"  media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="theme-color" content="#9978A7"/>
+    <meta name="theme-color" content="#e8e1eb"/>
     <meta name="description" content="App de Saude Mental">
 </head>
 <body>
@@ -19,30 +19,42 @@
         <div class="header4">
             <div class="informacoes">
                 <div class="container-icone"></div>
-                <img src="./assets/icones/sino.svg" alt="notificações">
             </div>
-            <h2>MindCalm</h2>
+            <div class="notf">
+                <i class="fa-solid fa-bell" alt="notificações"></i>
+          </div>
+            <h2 class="logo">MindCalm</h2>
         </div>
         <!--Cabeçalho Fim-->
-        <h1>Diário de emoções</h1>
+        <div class="titulos">
+        <h1>Diário de emoções</h1> 
+         <p>Como você está se sentindo agora?</p>
+    </div>
         <!--Parte superior Fim-->
         <!--Formulario-->
         <!--Humor-->
-        <p>Como você está se sentindo agora?</p>
+      
         <div class="emocoes">
-            <img src="./assets/humor/Happy.svg" alt="Muito feliz">
-            <img src="./assets/humor/Happy (1).svg" alt="Feliz">
-            <img src="./assets/humor/Sad.svg" alt="Triste">
-            <img src="./assets/humor/Boring.svg" alt="Irritado">
-            <img src="./assets/humor/Angry.svg" alt="Raivoso">
+            <div class="anim"> <i class="fa-regular fa-face-laugh-beam"></i>
+            </div>
+            <div class="fel"><i class="fa-regular fa-face-grin-wide"></i></div>
+         
+            <div class="tris"><i class="fa-regular fa-face-frown"></i></div>
+       
+            <div class="irrt"><i class="fa-regular fa-face-angry"></i></div>
+        
+            <div class="norm"><i class="fa-regular fa-face-meh"></i></div>
+
         </div>
+        
         <!--Humor Fim-->
         <div class="resposta-diaria">
-                <label id="form-diario">Como foi o seu dia?</label>
-                <input type="text" for="form-diario" placeholder="  Conte como foi seu dia">
-        </div>
-        <div class="container-vazio">
-         <input type="button" class="add" value="Adicionar foto">
+            <label id="form-diario">Como foi o seu dia?</label>
+            <textarea id="resposta-texto" for="form-diario" placeholder="  Conte como foi seu dia">  Seja bem vindo(a)!</textarea>
+            <button class="button-mic" id="butt">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <h3>Se preferir grave um audio! <i class="fa-regular fa-face-smile-beam"></i></h3>
         </div>
         <!--Formulario Fim-->
         <!--Navegação-->
@@ -70,5 +82,7 @@
        
         <!--Navegação Fim-->
     </div>
+    <script src="/assets/js/events.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
 </html>

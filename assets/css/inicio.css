@@ -10,6 +10,7 @@ body{
     justify-content: center; /* Centralizar no eixo horizontal */
     align-items: center; /* Centralizar no eixo vertical */
     height: 100vh; /* Faz com que o body ocupe 100% da altura da tela */
+    overflow-x: hidden
 }
 
 :root {
@@ -22,7 +23,7 @@ body{
  }
 
  .container {
-  text-align: center; /* Centralizar o conteúdo dentro do container */
+  text-align: center; 
 }
 
  .logo-img {
