@@ -44,7 +44,7 @@ function captarAudio() {
                             audio.src = reader.result;
                             audio.controls = true;
                             audio.style.marginTop = "-10px"; // Ajuste da margem superio
-                            audio.style.margin = "0 auto 12rem"; // Centralizar elemento horizontalmente
+                            audio.style.margin = "0 auto"; // Centralizar elemento horizontalmente
                             audio.style.display = "block"; // Garantir que o elemento ocupe toda a largura disponível
                             $('body').append(audio); // ao invés de append aqui o áudio será enviado para outro lugar
                         } catch (error) {

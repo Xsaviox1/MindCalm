@@ -42,11 +42,19 @@
         </div>
         <div class="input-container">
             <label class="input-label" for="pass">Senha</label>
-            <input type="text" id="pass">
+            <div class="password-field">
+                <input type="password" id="pass">
+                <span class="password-toggle" onclick="togglePassword('pass')">
+                </span>
+            </div>
         </div>
         <div class="input-container">
             <label class="input-label"for="pass">Digite novamente sua senha</label>
-            <input type="text" id="pass">
+            <div class="password-field">
+                <input type="password" id="pass-confirm">
+                <span class="password-toggle" onclick="togglePassword('pass-confirm')">
+                </span>
+            </div>
         </div>
         <div class="container-privacidade">
             <div class="privacidade">
@@ -59,7 +67,7 @@
                 </p>
             </div>
             <div class="botao-prox">
-                <a href="cad2.html"><input class=prox type="button" alt="botao-continuar" value="Ir"></a>
+                <a href="cad2.html"><input class=prox type="button" alt="botao-continuar" value="IR"></a>
             </div>
         </div>
         <!--Formularios Fim-->
@@ -79,5 +87,6 @@
         </div>
         <!--Logo Fim-->
     </form>
+    <script src="/assets/js/function.js"></script>
 </body>
 </html>

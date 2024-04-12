@@ -13,7 +13,7 @@
     <meta name="description" content="App de Saude Mental">
 </head>
 <body>
-    <form class="form">
+    <form class="form" onsubmit="return validateForm()">
         <!--Parte superior-->
         <!--Cabeçalho-->
         <div class="titulos">
@@ -29,11 +29,12 @@
         <!--Inicio do Formulario-->
         <div class="input-container">
             <label class="input-label" for="email-tel">E-mail ou Telefone</label>
-            <input type="text" id="email-tel">
+            <input type="email" id="email-tel" required>
         </div>
         <div class="input-container">
             <label class="input-label" for="pass">Senha</label>
-            <input type="password" id="pass">
+            <input type="password" id="pass" required>
+            <span class="password-toggle" onclick="togglePassword('pass')"></span>
         </div>
         <!--Fim do Formulario-->
         <!--Inicio do Login-->
@@ -45,7 +46,7 @@
                 </label>
                 <span class="texto">Lembrar senha?</span>
             </div>
-            <a href="home.html"><input class=entrar type="button" value="Entrar" alt="botao-continuar"></a>
+            <button type="submit" class="entrar" alt="botao-entrar">Entrar</button>
         </div>
         <p class="cad">Ainda não tem conta? <a href="cad.html">Cadastre-se Agora</a> </p>
         <!--Fim do Login-->
@@ -60,5 +61,6 @@
         </div>
         <!--Fim Forma de Login-->
     </form>
+    <script src="/assets/js/function.js"></script>
 </body>
 </html>

@@ -62,7 +62,7 @@ form{
   width: 100vw;
 }
 /*inputs*/
-#email, #pass{
+#email, #pass, #pass-confirm{
     width: 90vw;
   }
 
@@ -157,6 +157,10 @@ form{
     color: #fff;
   }
   
+  input{
+    font-size: 16px;
+  }
+  
   .input-container label{
     display: flex;
     margin-left: 10px;
@@ -209,7 +213,7 @@ form{
     font-size: 18px;
     color: var(--cor--escura);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.204);
-    font-family: shadows into light two;
+    font-family: urbanist;
     font-weight: 500;
   }
 
