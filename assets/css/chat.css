@@ -135,6 +135,7 @@ body{
         border: none;
         width: 80px;
         height: 28px;
+        color: var(--cor--escura);
         font-size: rem;
         font-family: urbanist;
         background-color: white;
