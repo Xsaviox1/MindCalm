@@ -11,7 +11,7 @@
         "id": 2,
         "imagem": "./assets/img/ps2.svg",
         "nome": "Juliane Reis",
-        "distancia": "8 min de você",
+        "distancia": "1 min de você",
         "latitude": -8.02985,
         "longitude": -34.89253
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "imagem": "./assets/img/ps3.svg",
         "nome": "Cris Diola",
-        "distancia": "9 min de você",
+        "distancia": "2 Km de você",
         "latitude": -8.07202,
         "longitude": -34.9099
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "imagem": "./assets/img/ps4.svg",
         "nome": "Augosto Castro",
-        "distancia": "9 min de você",
+        "distancia": "1 Km de você",
         "latitude": -8.07701,
         "longitude": -34.93097
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "imagem": "./assets/img/ps5.svg",
         "nome": "Junia Melo",
-        "distancia": "11 min de você",
+        "distancia": "3 Km de você",
         "latitude": -8.04709,
         "longitude": -34.95526
     }
