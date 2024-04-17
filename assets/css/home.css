@@ -61,7 +61,15 @@ body{
   100% { transform: rotate(360deg); }
 }
 
-
+/*Modificação 16/04*/
+.menu{
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+  width: 25vw;
+  }
+  /*Modificação fim*/
 /*iframes*/
 iframe{
     border-radius: 15px;
@@ -92,7 +100,6 @@ iframe{
     background-image: url(/assets/icones/avatar.svg);
     border-radius: 100px;
     margin-left: 16px;
-    margin-top: 5px;
   }
 
   .notf{
@@ -105,7 +112,7 @@ iframe{
   color: var(--cor--fundo);
   margin-right: 16px;
   }
-  .container5 .header5{
+  .container5 .header4{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,7 +219,7 @@ h3{
     margin-top: 2em;
   }
  
-  .container5 .header5 span{
+  .header4 h2{
     font-family: "Shadows Into Light Two", cursive;
     font-weight: 600;
     font-size: 1.4em;

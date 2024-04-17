@@ -47,7 +47,6 @@ body{
   background-image: url(/assets/icones/avatar.svg);
   border-radius: 100px;
   margin-left: 16px;
-  margin-top: 5px;
   }
   .container4 .header4{
     width: 90vw;
@@ -69,7 +68,15 @@ body{
   .container4 .informacoes{
     display: flex;
   }
-
+/*Modificação 16/04*/
+.menu{
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+  width: 25vw;
+  }
+  /*Modificação fim*/
   .notf{
     color: #5D4966;
     margin-left: -13rem;

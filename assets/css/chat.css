@@ -34,14 +34,21 @@ body{
   margin-top: -20px;
  }
 
-
+/*Modificação 16/04*/
+.menu{
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: space-between;
+  width: 25vw;
+  }
+  /*Modificação fim*/
  .container4 .container-icone{
   width: 3em;
   height: 3em;
   background-image: url(/assets/icones/avatar.svg);
   border-radius: 100px;
   margin-left: 16px;
-  margin-top: 5px;
   }
   .container4 .header4{
     width: 90vw;
@@ -57,7 +64,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 120vh;
   }
 
   .container4 .informacoes{
